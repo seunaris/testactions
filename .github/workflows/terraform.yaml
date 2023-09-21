@@ -10,7 +10,7 @@
     runs-on:  ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v16
       - name: setup terraform
         uses: hashicorp/setup-terraform@v2
         with:
