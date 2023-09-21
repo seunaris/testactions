@@ -11,11 +11,11 @@
       - name: echo string
         run:  echo "Hello world"
       - name: multi string
-        run:  |
+        run:    |
           node -v
           npm -v
       - name: python command
-        run:  |
+        run:    |   
           import platform
           print(platform.processor())
           shell: python
@@ -23,7 +23,7 @@
     runs-on: windows-latest
     steps:
       - name: Directory
-        run:  Get-Location
-      - run: Directory bash
+        run: Get-Location
+      - name:  Directory bash
         run: pwd
         shell: bash
